@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vanta NET Background</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #vanta-bg { width: 100%; height: 100vh; }
+  </style>
+  <!-- Include dependencies from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+</head>
+<body>
+  <div id="vanta-bg"></div>
+
+  <script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xff0000,
+      backgroundColor: 0x0,
+      points: 10,
+      maxDistance: 20,
+      spacing: 15,
+      showDots: true
+    });
+  </script>
+</body>
+</html>
